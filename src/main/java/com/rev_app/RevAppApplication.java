@@ -12,8 +12,14 @@ public class RevAppApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RevAppApplication.class, args);
 	}
+
 	@GetMapping("/guest")
 	public String guest(){
+		return"Hello Guest";
+	}
+
+	@GetMapping("/welcome")
+	public String welcome(){
 		return"Hello Guest";
 	}
 }
